@@ -5,9 +5,11 @@ import com.example.itemapi.service.ItemService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @RequestMapping("/api/items")
+@CrossOrigin(origins = "*")
 public class ItemController {
 
     private final ItemService itemService;
